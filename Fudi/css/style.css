@@ -1,91 +1,389 @@
-@font-face{
-    font-family: LatoReg;
-    src: url(../font/Lato-Reg.ttf);
+@font-face {
+  font-family: LatoReg;
+  src: url(../font/Lato-Reg.ttf);
+}
+@font-face {
+  font-family: LatoItl;
+  src: url(../font/Lato-RegIta.ttf);
+}
+@font-face {
+  font-family: LatoLig;
+  src: url(../font/Lato-Lig.ttf);
+}
+@font-face {
+  font-family: LatoLigIta;
+  src: url(../font/Lato-LigIta.ttf);
+}
+:root {
+  --cl-white: #fff;
+  --cl-red: #f57365;
+  --cl-black: #333;
 }
 
-:root{
-    --cl-white: #fff;
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: LatoReg;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    font-family: LatoReg;
-    background-color: #333;
+.pull-left {
+  float: left;
 }
 
-.pull-left{
-    float: left;
+.pull-right {
+  float: right;
 }
 
-.pull-right{
-    float: right;
-}
-
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 * {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
-.container{
-    max-width: 980px;
-    width: 100%;
-    margin: auto;
+.container {
+  max-width: 980px;
+  width: 100%;
+  margin: auto;
 }
 
-header{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    height: 80px;
-    display: flex;
-    padding: 20px 0;
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  display: flex;
+  padding: 20px 0;
 }
 
-.main-banner{
-    background: lightgray;
-    background: url(../images/main-image.jpg) no-repeat 0 0;
-    background-size: cover;
-    width: 100%;
-    height: 880px;
+header .logo {
+  padding-top: 10px;
 }
 
-nav{
-    padding-top: 20px;
+nav {
+  position: relative;
+  height: 80px;
 }
 
-nav ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav li{
-    list-style: none;
-    padding: 0 10px;
+nav li {
+  list-style: none;
+  padding: 0 20px;
+  line-height: 80px;
 }
 
-nav li a{
-    color: #fff;
+nav li a {
+  color: #fff;
 }
 
-.sub-menu-toggle{
-    display: none;
+nav li a:hover {
+  color: #333;
 }
 
-.sub-menu{
-    display: none;
-    display: flex;
+nav label span img {
+  width: 1.2em;
 }
 
-.sub-menu-toggle:checked ~ .sub-menu{
-    display: block;
+nav label span img:hover {
+  opacity: 0.7;
+}
+
+.sub-menu-toggle {
+  display: none;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+
+.sub-menu li {
+  line-height: 40px;
+  width: 150px;
+  text-transform: uppercase;
+  opacity: 0.8;
+  text-align: end;
+}
+
+.sub-menu li:hover {
+  opacity: 1;
+}
+
+.sub-menu-toggle:checked ~ .sub-menu {
+  display: block;
+}
+
+.main-banner {
+  background: lightgray;
+  background: url(../images/main-image.jpg) no-repeat 0 0;
+  background-size: cover;
+  width: 100%;
+  height: 880px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-banner p {
+  font-family: "Times New Roman", Times;
+  font-style: italic;
+  color: var(--cl-white);
+  opacity: 0.8;
+  font-size: 2em;
+  margin: 0;
+}
+
+.main-banner h1 {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 6em;
+  font-style: normal;
+  opacity: 1;
+  color: var(--cl-white);
+}
+
+.main-banner .button {
+  width: 280px;
+  color: var(--cl-white);
+  padding: 20px;
+  border: 2px solid #fff;
+  margin: 10px 0;
+}
+
+.main-banner .button:hover {
+  opacity: 0.7;
+}
+
+.main-banner span {
+  color: var(--cl-white);
+  text-transform: uppercase;
+  font-size: 0.8em;
+  word-spacing: 0.5em;
+  letter-spacing: 0.1em;
+}
+
+.linked {
+  margin: 100px 0;
+  background-color: var(--cl-white);
+}
+
+.linked .container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.link {
+  padding: 0 30px;
+}
+
+.link h2 {
+  font-size: 1.2em;
+}
+
+.link p {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.apps {
+  background-color: #f7f7f7;
+  height: 880px;
+  padding-top: 100px;
+  margin-bottom: -6px;
+}
+
+.apps .text {
+  width: 40%;
+  padding-top: 70px;
+}
+
+.apps .text h2 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.apps .text article {
+  color: #333;
+  line-height: 1.5em;
+  padding-bottom: 10px;
+}
+
+.apps .text a {
+  padding: 0 10px 0 0;
+}
+
+.comment {
+  background: url(../images/comment-image.jpg) no-repeat 0 0;
+  background-size: cover;
+  height: 490px;
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 60px;
+}
+
+.comment p {
+  text-align: center;
+  color: #867b85;
+  font-family: LatoLig;
+  font-size: 1.6em;
+}
+
+.comment span {
+  font-family: LatoLigIta;
+  font-size: 1.2em;
+  color: #867b85;
+}
+
+.comment .navi {
+  padding: 30px 47.5%;
+}
+
+.comment .kreis,
+.comment .kreis::before,
+.comment .kreis::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.comment .kreis {
+  position: relative;
+  margin: 0;
+}
+
+.comment .kreis::before {
+  position: absolute;
+  left: 40px;
+  top: 0;
+  opacity: 0.5;
+}
+
+.comment .kreis::after {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  opacity: 0.5;
+}
+
+.cusines {
+  text-align: center;
+}
+
+.cusines .title {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.cusines .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gericht {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 225px;
+  color: var(--cl-white);
+}
+
+.gericht p {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  margin: 0;
+}
+
+.gericht span {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.gericht1 {background: url(../images/gericht1.jpg) no-repeat 0 0;background-size: cover;}
+.gericht2 {background: url(../images/gericht2.jpg) no-repeat 0 0;background-size: cover;}
+.gericht3 {background: url(../images/gericht3.jpg) no-repeat 0 0;background-size: cover;}
+.gericht4 {background: url(../images/gericht4.jpg) no-repeat 0 0;background-size: cover;}
+.gericht5 {background: url(../images/gericht5.jpg) no-repeat 0 0;background-size: cover;}
+.gericht6 {background: url(../images/gericht6.jpg) no-repeat 0 0;background-size: cover;}
+.gericht7 {background: url(../images/gericht7.jpg) no-repeat 0 0;background-size: cover;}
+.gericht8 {background: url(../images/gericht8.jpg) no-repeat 0 0;background-size: cover;}
+.gericht9 {background: url(../images/gericht9.jpg) no-repeat 0 0;background-size: cover;}
+.gericht10 {background: url(../images/gericht10.jpg) no-repeat 0 0;background-size: cover;}
+
+.number {
+  width: 15%;
+  padding: 60px 0;
+  color: #333;
+}
+
+.number span {
+  font-size: 2em;
+  color: #000;
+}
+
+footer {
+  background-color: #f7f7f7;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+}
+
+footer span {
+  display: flex;
+  align-items: center;
+}
+
+footer span a {
+  padding-left: 10px;
+  color: #000;
+}
+
+.linked h2, 
+.apps h2, 
+.cusines h2{
+  position: relative;
+}
+
+.linked h2::after, 
+.apps h2::after, 
+.cusines h2::after{
+  position: absolute;
+  content: "";
+  background-color: tomato;
+  width: 80px;
+  height: 1px;
+  top: 110%;
+  left: 35%;
+}
+
+.apps h2::after{
+  left: 0;
+}
+
+.cusines h2::after{
+  left: 47%;
 }
