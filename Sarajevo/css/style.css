@@ -1,0 +1,83 @@
+@font-face{
+    font-family: LatoRgl;
+    src: url(../font/Lato-Reg.ttf);
+}
+@font-face{
+    font-family: LatoLit;
+    src: url(../font/Lato-Lig.ttf);
+}
+:root{
+    --blue: #4c76ff;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: LatoRgl;
+}
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    max-width: 980px;
+    margin: auto;
+}
+.header-nav{
+    background: url(../images/Layer\ 40.png) no-repeat 0 0;
+    background-size: cover; 
+    height: 1170px;
+}
+nav{
+    background: url(../images/Rectangle\ 2.png) no-repeat 0 0;
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+nav > .container{
+    display: flex;
+    justify-content: space-between;
+}
+nav .search{
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 50%;
+}
+nav a{
+    color: #fff;
+}
+nav a:hover{
+    text-decoration: none;
+    color: aquamarine;
+}
+nav ul .active{
+    border-top: 1px solid var(--blue);
+    padding: 0;
+}
+nav ul li{
+    line-height: 50px;
+}
+.showCase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1120px;
+    font-family: LatoLit;
+}
+.showCase > img{
+    width: 240px;
+}
+.showCase p{
+    font-size: 4rem;
+    margin: 0;
+}
+.showCase p > span{
+    color: var(--blue);
+}
+.showCase > span{
+    font-size: 1.5em;
+}
