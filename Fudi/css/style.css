@@ -20,6 +20,10 @@
   --cl-black: #333;
 }
 
+.clear{
+  clear: both;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -57,7 +61,7 @@ header {
   top: 0;
   height: 80px;
   display: flex;
-  padding: 20px 0;
+  padding: 20px 20px;
 }
 
 header .logo {
@@ -124,6 +128,7 @@ nav label span img:hover {
 
 .sub-menu-toggle:checked ~ .sub-menu {
   display: block;
+  transition: all ease-in-out 1000ms;
 }
 
 .main-banner {
@@ -140,7 +145,7 @@ nav label span img:hover {
 }
 
 .main-banner p {
-  font-family: "Times New Roman", Times;
+  font-family: "Times New Roman", Times;                              
   font-style: italic;
   color: var(--cl-white);
   opacity: 0.8;
@@ -202,11 +207,15 @@ nav label span img:hover {
   color: #888;
 }
 
-.apps {
+.apps{
   background-color: #f7f7f7;
   height: 880px;
   padding-top: 100px;
   margin-bottom: -6px;
+}
+
+.apps .photo{
+  width: 45%;
 }
 
 .apps .text {
@@ -386,4 +395,42 @@ footer span a {
 
 .cusines h2::after{
   left: 47%;
+}
+
+@media all and (max-width:767px){
+  .linked{
+    margin: 50px 0 0 0;
+  }
+
+  .linked .container{
+    flex-direction: column;
+  }
+
+  .apps .text{
+    width: 100%;
+    float: left;
+  }
+
+  .apps .photo{
+    width: 100%;
+    float: left;
+    padding-left: 15%
+  }
+
+  .apps .photo img{
+    width: 80%;
+  }
+
+  .apps{
+    padding: 0 20px;
+    height: 930px;
+  }
+
+  .gericht{
+    width: 50%;
+  }
+
+  .number{
+    width: 50%;
+  }
 }
