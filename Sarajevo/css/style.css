@@ -1,83 +1,132 @@
-@font-face{
-    font-family: LatoRgl;
-    src: url(../font/Lato-Reg.ttf);
+@font-face {
+  font-family: LatoRgl;
+  src: url(../font/Lato-Reg.ttf);
 }
-@font-face{
-    font-family: LatoLit;
-    src: url(../font/Lato-Lig.ttf);
+@font-face {
+  font-family: LatoLit;
+  src: url(../font/Lato-Lig.ttf);
 }
-:root{
-    --blue: #4c76ff;
+:root {
+  --blue: #4c76ff;
 }
-body{
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    font-family: LatoRgl;
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: LatoRgl;
 }
-*{
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
-.container{
-    width: 100%;
-    max-width: 980px;
-    margin: auto;
+img{
+  max-width: 100%;
+  border: 0;
 }
-.header-nav{
-    background: url(../images/Layer\ 40.png) no-repeat 0 0;
-    background-size: cover; 
-    height: 1170px;
+.fs-3{
+  font-size: 3em;
 }
-nav{
-    background: url(../images/Rectangle\ 2.png) no-repeat 0 0;
-    background-size: cover;
-    height: 50px;
-    width: 100%;
+.header-nav {
+  background: url(../images/Layer\ 40.png) no-repeat 0 0;
+  background-size: cover;
+  height: 700px;
 }
-nav > .container{
-    display: flex;
-    justify-content: space-between;
+nav {
+  background: url(../images/Rectangle\ 2.png) no-repeat 0 0;
+  background-size: cover;
+  height: 50px;
+  width: 100%;
 }
-nav .search{
-    background-color: transparent;
-    border: none;
-    height: 100%;
-    width: 50%;
+nav .search {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  width: 50%;
 }
-nav a{
-    color: #fff;
+nav a {
+  color: #dedede;
 }
-nav a:hover{
-    text-decoration: none;
-    color: aquamarine;
+nav a:hover {
+  text-decoration: none;
+  color: aquamarine;
 }
-nav ul .active{
-    border-top: 1px solid var(--blue);
-    padding: 0;
+nav ul .active {
+  border-top: 1px solid var(--blue);
+  padding: 0;
 }
-nav ul li{
-    line-height: 50px;
+nav ul li {
+  line-height: 50px;
 }
-.showCase{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 1120px;
-    font-family: LatoLit;
+.showCase {
+  height: 650px;
+  font-family: LatoLit;
 }
-.showCase > img{
-    width: 240px;
+.showCase > img {
+  width: 240px;
 }
-.showCase p{
-    font-size: 4rem;
-    margin: 0;
+.showCase p {
+  font-size: 4rem;
+  margin: 0;
 }
-.showCase p > span{
-    color: var(--blue);
+.showCase p > span {
+  color: var(--blue);
 }
-.showCase > span{
-    font-size: 1.5em;
+.showCase > span {
+  font-size: 2em;
+}
+.showCase .row > * {
+  padding-right: 1em;
+}
+.features {
+  background: #efefef;
+}
+.features h2,
+.works h2,
+.team h2,
+.facts h2,
+.discuss h2{
+  font-size: 2.5em;
+  color: var(--blue);
+}
+.features .item h3 {
+  font-size: 1.2em;
+}
+.features .item p {
+  color: #51636f;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.facts{
+  background: url(../images/Rectangle\ 8\ copy.png) no-repeat 0 0;
+  background-size: cover;
+  height: 448px;
+}
+.discuss input{
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  opacity: 0.8;
+  border-radius: 0;
+}
+footer .map{
+  background: url(../images/Map.png) no-repeat 0 center;
+  background-size: cover;
+  height: 180px;
+}
+.footer-main{
+  background: #010305;
+}
+.footer-main p, 
+.footer-main a{
+  font-size: 0.8em;
+  line-height: 2em;
+}
+.footer-main input{
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 3px;
+}
+.text-gray{
+  color: #cccdcd;
 }

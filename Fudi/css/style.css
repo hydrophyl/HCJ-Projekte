@@ -20,7 +20,7 @@
   --cl-black: #333;
 }
 
-.clear{
+.clear {
   clear: both;
 }
 
@@ -145,7 +145,7 @@ nav label span img:hover {
 }
 
 .main-banner p {
-  font-family: "Times New Roman", Times;                              
+  font-family: "Times New Roman", Times;
   font-style: italic;
   color: var(--cl-white);
   opacity: 0.8;
@@ -207,14 +207,14 @@ nav label span img:hover {
   color: #888;
 }
 
-.apps{
+.apps {
   background-color: #f7f7f7;
   height: 880px;
   padding-top: 100px;
   margin-bottom: -6px;
 }
 
-.apps .photo{
+.apps .photo {
   width: 45%;
 }
 
@@ -331,16 +331,46 @@ nav label span img:hover {
   font-weight: 500;
 }
 
-.gericht1 {background: url(../images/gericht1.jpg) no-repeat 0 0;background-size: cover;}
-.gericht2 {background: url(../images/gericht2.jpg) no-repeat 0 0;background-size: cover;}
-.gericht3 {background: url(../images/gericht3.jpg) no-repeat 0 0;background-size: cover;}
-.gericht4 {background: url(../images/gericht4.jpg) no-repeat 0 0;background-size: cover;}
-.gericht5 {background: url(../images/gericht5.jpg) no-repeat 0 0;background-size: cover;}
-.gericht6 {background: url(../images/gericht6.jpg) no-repeat 0 0;background-size: cover;}
-.gericht7 {background: url(../images/gericht7.jpg) no-repeat 0 0;background-size: cover;}
-.gericht8 {background: url(../images/gericht8.jpg) no-repeat 0 0;background-size: cover;}
-.gericht9 {background: url(../images/gericht9.jpg) no-repeat 0 0;background-size: cover;}
-.gericht10 {background: url(../images/gericht10.jpg) no-repeat 0 0;background-size: cover;}
+.gericht1 {
+  background: url(../images/gericht1.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+.gericht2 {
+  background: url(../images/gericht2.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+.gericht3 {
+  background: url(../images/gericht3.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+.gericht4 {
+  background: url(../images/gericht4.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+.gericht5 {
+  background: url(../images/gericht5.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+.gericht6 {
+  background: url(../images/gericht6.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+.gericht7 {
+  background: url(../images/gericht7.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+.gericht8 {
+  background: url(../images/gericht8.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+.gericht9 {
+  background: url(../images/gericht9.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+.gericht10 {
+  background: url(../images/gericht10.jpg) no-repeat 0 0;
+  background-size: cover;
+}
 
 .number {
   width: 15%;
@@ -371,15 +401,15 @@ footer span a {
   color: #000;
 }
 
-.linked h2, 
-.apps h2, 
-.cusines h2{
+.linked h2,
+.apps h2,
+.cusines h2 {
   position: relative;
 }
 
-.linked h2::after, 
-.apps h2::after, 
-.cusines h2::after{
+.linked h2::after,
+.apps h2::after,
+.cusines h2::after {
   position: absolute;
   content: "";
   background-color: tomato;
@@ -389,48 +419,48 @@ footer span a {
   left: 35%;
 }
 
-.apps h2::after{
+.apps h2::after {
   left: 0;
 }
 
-.cusines h2::after{
+.cusines h2::after {
   left: 47%;
 }
 
-@media all and (max-width:767px){
-  .linked{
+@media all and (max-width: 767px) {
+  .linked {
     margin: 50px 0 0 0;
   }
 
-  .linked .container{
+  .linked .container {
     flex-direction: column;
   }
 
-  .apps .text{
+  .apps .text {
     width: 100%;
     float: left;
   }
 
-  .apps .photo{
+  .apps .photo {
     width: 100%;
     float: left;
-    padding-left: 15%
+    padding-left: 15%;
   }
 
-  .apps .photo img{
+  .apps .photo img {
     width: 80%;
   }
 
-  .apps{
+  .apps {
     padding: 0 20px;
     height: 930px;
   }
 
-  .gericht{
+  .gericht {
     width: 50%;
   }
 
-  .number{
+  .number {
     width: 50%;
   }
 }
