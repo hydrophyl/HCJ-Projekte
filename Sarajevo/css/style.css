@@ -27,6 +27,10 @@ img{
 .fs-3{
   font-size: 3em;
 }
+body a:hover {
+  text-decoration: none;
+  color: aquamarine;
+}
 .header-nav {
   background: url(../images/Layer\ 40.png) no-repeat 0 0;
   background-size: cover;
@@ -47,13 +51,8 @@ nav .search {
 nav a {
   color: #dedede;
 }
-nav a:hover {
-  text-decoration: none;
-  color: aquamarine;
-}
 nav ul .active {
   border-top: 1px solid var(--blue);
-  padding: 0;
 }
 nav ul li {
   line-height: 50px;
@@ -68,6 +67,7 @@ nav ul li {
 .showCase p {
   font-size: 4rem;
   margin: 0;
+  text-align: center;
 }
 .showCase p > span {
   color: var(--blue);
@@ -129,4 +129,63 @@ footer .map{
 }
 .text-gray{
   color: #cccdcd;
+}
+.nav-bar{
+  display: none;
+}
+.nav-toggle:checked ~ .nav-bar{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 100px;
+  text-align: end;
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+    content: "";
+    display: block;
+    background: white;
+    height: 3px;
+    width: 1.5em;
+    border-radius: 3px;
+    transition: ease-in-out 500ms;
+}
+.hamburger::before{
+    transform: translateY(-6px);
+}
+.hamburger::after{
+    transform: translateY(3px);
+}
+.open .hamburger{
+    transform: rotate(45deg);
+}
+.open .hamburger::before{
+    opacity: 0;
+}
+.open .hamburger::after{
+    transform: rotate(-90deg) translateX(3px);   
+}
+@media all and (max-width:767px){
+  .apps .col-2{
+    width: 12%;
+    margin-top: 0.5rem;
+  }
+  .apps .col-10,
+  .features .col-10{
+    font-size: 80%;
+  }
+  .features .col-2{
+    width: 12%;
+  }
+}
+@media all and (max-width:575px){
+  .facts .image img{
+    width: 60%;
+  }
+  .footer-main a{
+    font-size: 0.6em;
+  }
 }
