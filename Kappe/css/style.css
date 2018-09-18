@@ -1,0 +1,165 @@
+:root {
+  --blue: #2db8b7;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+}
+img {
+  max-width: 100%;
+  border: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.bg-white {
+  background-color: #fff;
+}
+.bg-ac {
+  background-color: #acacac;
+}
+.bg-d7 {
+  background-color: #d7d7d7;
+}
+.bg-all {
+  background-color: #242b2e;
+}
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
+.info {
+  position: fixed;
+  width: 90px;
+  height: 90px;
+  background-color: var(--blue);
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact {
+  display: none;
+  position: fixed;
+  top: 90px;
+  right: 0;
+  width: 280px;
+  height: 130px;
+  background-color: #000;
+  opacity: 0.7;
+  color: white;
+  padding: 15px;
+}
+.contact .item {
+  padding: 0.5em 0;
+}
+.contact-toggle {
+  display: none;
+}
+.contact-toggle:checked ~ .contact {
+  display: block;
+}
+.menu {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 30px 70px rgb(28, 233, 96);
+  z-index: 99;
+}
+.logo {
+  padding: 30px 0;
+  text-align: center;
+}
+.content {
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.content .item {
+  width: 25%;
+  height: 311px;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin: 0;
+  padding: 0;
+}
+.nav li {
+  text-align: end;
+  text-transform: uppercase;
+  background: linear-gradient(#333b3f, #2e363a) ;
+}
+.nav li a{
+  line-height: 60px;
+  width: 100%;
+  padding-right: 20px;
+  display: inline-block;
+}
+.nav .active {
+  background: linear-gradient(#31bdbb, #18a3a1);
+}
+.nav li:hover{
+  background: linear-gradient(#31bdbb, #18a3a1);
+}
+.menu span {
+  text-align: end;
+  padding: 20px;
+  color: var(--blue);
+}
+.link li {
+  text-align: end;
+  padding: 5px 20px;
+}
+.link .active {
+  opacity: 1;
+}
+.link a {
+  opacity: 0.5;
+}
+.social {
+  margin: 30px 0;
+}
+.row {
+  text-align: end;
+  padding-right: 20px;
+  border-top: #1e282b 1px solid;
+}
+.row > * {
+  padding-left: 5px;
+}
+.menu > p {
+  text-align: end;
+  color: #666;
+  margin: 0;
+  padding-right: 20px;
+}
+@media all and (max-width:767px){
+  .menu{
+    width: 30vw;
+  }
+  .content .item{
+    width: 50%;
+  }
+}
