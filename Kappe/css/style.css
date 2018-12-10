@@ -1,5 +1,6 @@
 :root {
   --blue: #2db8b7;
+  --e3: #e3e3e3;
 }
 * {
   box-sizing: border-box;
@@ -27,6 +28,9 @@ ul {
 }
 li {
   list-style: none;
+}
+.cl-9c{
+  color: #9c9c9c;
 }
 .bg-white {
   background-color: #fff;

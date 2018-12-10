@@ -1,14 +1,131 @@
+:root{
+    --cl-blue:#1ab5b3;
+}
 .content{
     background-color: gray;
+    justify-content: space-around;
 }
-
 .content .col{
-    width: 18%;
+    width: 294px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
-
 .col .item{
     width: 100%;
-    padding: 10px 0;
     height: auto;
+    background-color: #fff;
+    margin-bottom: 25px;
+}
+.box230{
+    width: 100%;
+    height: 230px;
+    background-color: #d7d7d7;
+    position: relative;
+}
+.box262{
+    height: 262px;
+    background-color: #d7d7d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box230::before{
+    content: url(../images/left.png);
+    position: absolute;
+    top: 38%;
+}
+.box230::after{
+    content: url(../images/right.png);
+    position: absolute;
+    top: 38%;
+    right: 0;
+}
+.box141{
+    height: 141px;
+    background-color: #d7d7d7;
+}
+.box316{
+    height: 316px;
+    background-color: #d7d7d7;
+}
+.coti{
+    display: flex;
+    justify-content: start;
+    padding-top: 20px;
+    position: relative;
+}
+.coti::before{
+    content: "";
+    height: 1px;
+    width: 116%;
+    background-color: #e3e3e3;
+    position: absolute;
+    top: 0;
+    left: -8%;
+}
+.coti > *{
+    padding-right: 10px;
+}
+.coti p{
+    margin: 0;
+    color:#9c9c9c;
+}
+.item-content{
+    padding: 0 20px 20px 20px;
+}
+.item-link{
+    padding: 30px 20px;
+    background-color: var(--cl-blue);
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+.col .item-side{
+    background-color: #242b2e;
+    color: white;
+    padding: 5px 15px 5px 40px;
+    position: relative;
+}
+.col .item-side::before{
+    content: "";
+    background-color: var(--cl-blue);
+    height: 100%;
+    position: absolute;
+    width: 15px;
+    left: 0;
+    top: 0;
+}
+.col .item-quote{
+    background-color: #242b2e;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.item-quote q{
+    font-style: italic;
+    font-size: 1.2em;
+}
+.item-quote span{
+    font-size: 2em;
+    color: #1ab5b3;
+    line-height: 0.4;
+}
+.item-quote p{
+    margin: 0;
+    color: #1ab5b3;
+    font-size: 1.2em;
+}
+.oldpost{
+    width: 180px;
+    text-align: center;
+    line-height: 60px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--cl-blue);
+    font-size: 1.5em;
 }
